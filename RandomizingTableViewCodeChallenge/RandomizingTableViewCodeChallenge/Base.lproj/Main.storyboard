@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RandomizingTableViewCodeChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="N7U-5S-00O">
+                                <rect key="frame" x="0.0" y="189" width="393" height="629"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="user" textLabel="9a2-CP-uxt" style="IBUITableViewCellStyleDefault" id="x5o-UV-iPb" customClass="UserTableViewCell" customModule="RandomizingTableViewCodeChallenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="54.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x5o-UV-iPb" id="17j-OM-2M2">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="54.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9a2-CP-uxt">
+                                                    <rect key="frame" x="20" y="0.0" width="353" height="54.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="9a2-CP-uxt" id="l9T-hR-4em"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add User" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="utE-Tw-WJT">
+                                <rect key="frame" x="16" y="98" width="306" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="306" id="076-GB-uMG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8M-Rq-Ria">
+                                <rect key="frame" x="330" y="97" width="47" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="ILG-de-UtQ"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="tintColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vsK-Fx-XwT"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SQ5-Wf-CQv">
+                                <rect key="frame" x="16" y="140" width="150" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="V0M-Q4-odl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cp-MT-pyY">
+                                <rect key="frame" x="178" y="140" width="144" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Get Random"/>
+                                <connections>
+                                    <action selector="randomizeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A5Q-OL-XIo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="N7U-5S-00O" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2Sf-Fm-JS3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z8M-Rq-Ria" secondAttribute="trailing" constant="16" id="3B0-4P-QKA"/>
+                            <constraint firstItem="N7U-5S-00O" firstAttribute="top" secondItem="1cp-MT-pyY" secondAttribute="bottom" constant="15" id="9ES-yH-4Tu"/>
+                            <constraint firstItem="N7U-5S-00O" firstAttribute="top" secondItem="SQ5-Wf-CQv" secondAttribute="bottom" constant="15" id="FIQ-Mh-gTi"/>
+                            <constraint firstItem="SQ5-Wf-CQv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="NEY-0d-nGC"/>
+                            <constraint firstItem="Z8M-Rq-Ria" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="OuK-ae-DHL"/>
+                            <constraint firstItem="1cp-MT-pyY" firstAttribute="leading" secondItem="SQ5-Wf-CQv" secondAttribute="trailing" constant="12" id="R0j-AK-Q7h"/>
+                            <constraint firstItem="utE-Tw-WJT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Spb-7W-on4"/>
+                            <constraint firstItem="N7U-5S-00O" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Yfy-6H-AZa"/>
+                            <constraint firstItem="utE-Tw-WJT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="ehR-H5-tmb"/>
+                            <constraint firstItem="N7U-5S-00O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="n9C-Cl-nE9"/>
+                            <constraint firstItem="N7U-5S-00O" firstAttribute="top" secondItem="utE-Tw-WJT" secondAttribute="bottom" constant="57" id="s66-Sm-cQe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="Z8M-Rq-Ria" id="efO-1R-A4l"/>
+                        <outlet property="addUserTextField" destination="utE-Tw-WJT" id="1tU-zo-gvr"/>
+                        <outlet property="numberOfRandom" destination="SQ5-Wf-CQv" id="NnZ-x7-44v"/>
+                        <outlet property="randomizeButton" destination="1cp-MT-pyY" id="4jg-O4-dTF"/>
+                        <outlet property="tableView" destination="N7U-5S-00O" id="F9Q-9T-qE9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63.358778625954194" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
